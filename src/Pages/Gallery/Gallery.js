@@ -4,23 +4,23 @@ import './Gallery.css';
 
 const Gallery = () => {
   const images = [
-    { id: 1, title: 'Project Screenshot 1' },
-    { id: 2, title: 'Project Screenshot 2' },
-    { id: 3, title: 'Project Screenshot 3' },
-    { id: 4, title: 'Project Screenshot 4' },
-    { id: 5, title: 'Project Screenshot 5' },
-    { id: 6, title: 'Project Screenshot 6' },
+    { id: 1, title: 'Project Screenshot 1', src: '/images/1.png' },
+    { id: 2, title: 'Project Screenshot 2', src: '/images/2.png' },
+    { id: 3, title: 'Project Screenshot 3', src: '/images/3.png' },
+    { id: 4, title: 'Project Screenshot 4', src: '/images/4.png' },
+    { id: 5, title: 'Project Screenshot 5', src: '/images/5.png' },
+    { id: 6, title: 'Project Screenshot 6', src: '/images/6.png' },
   ];
 
   return (
     <div className="gallery-container">
       <nav className="navbar">
         <div className="nav-content">
-          <h2 className="logo">Your Name</h2>
+          <h2 className="logo">Gallery</h2>
           <div className="nav-links">
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/gallery" className="nav-link">Gallery</Link>
-            <Link to="/nutrition" className="nav-link">Nutrition</Link>
+            <Link to="/about" className="nav-link">About</Link>
           </div>
         </div>
       </nav>
@@ -33,9 +33,11 @@ const Gallery = () => {
       <div className="gallery-grid">
         {images.map((image) => (
           <div key={image.id} className="gallery-item">
-            <div className="image-placeholder">
-              <span>{image.title}</span>
-            </div>
+            <img 
+              src={image.src} 
+              alt={image.title}
+              className="gallery-image"
+            />
             <p className="image-title">{image.title}</p>
           </div>
         ))}

@@ -10,15 +10,39 @@ const Home = () => {
     }
   };
 
+  const projects = [
+    {
+      title: 'Cat-Website',
+      description: 'Purrfect Cats is an interactive, modern web application dedicated to cat lovers and pet owners.',
+      tech: 'React and CSS',
+      liveLink: 'https://your-ecommerce-project.com', 
+      githubLink: 'https://github.com/KrishaNaldo/krisu.git' 
+    },
+    {
+      title: 'Trail-Ink Hub ',
+      description: 'A printing service website that allows users to customize and order printed materials online.',
+      tech: 'React,CSS,Django,Python',
+      liveLink: 'https://drive.google.com/file/d/1Vc2s0OjS_ezIR3u1pXkcSI_iWiDZfm_I/view?usp=sharing', 
+      githubLink: 'https://github.com/NathanJargon/TRAILINK.git' 
+    },
+    {
+      title: 'Mental Health Website',
+      description: 'A calming web application designed to support individuals experiencing anxiety, depression, and insomnia.',
+      tech: 'React,CSS',
+      liveLink: 'https://your-weather-app.com', 
+      githubLink: 'https://github.com/KrishaNaldo/cat-website.git' 
+    }
+  ];
+
   return (
     <div className="home-container">
       <nav className="navbar">
         <div className="nav-content">
-          <h2 className="logo">Krisha Naldo</h2>
+          <h2 className="logo">My Portfolio</h2>
           <div className="nav-links">
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/gallery" className="nav-link">Gallery</Link>
-            <Link to="/nutrition" className="nav-link">Nutrition</Link>
+            <Link to="/about" className="nav-link">About</Link>
           </div>
         </div>
       </nav>
@@ -52,9 +76,8 @@ const Home = () => {
             <div className="skill-card">HTML/CSS</div>
             <div className="skill-card">Node.js</div>
             <div className="skill-card">Git</div>
-            <div className="skill-card">REST APIs</div>
-            <div className="skill-card">Responsive Design</div>
-            <div className="skill-card">MongoDB</div>
+            <div className="skill-card">Django</div>
+            <div className="skill-card">Figma</div>
           </div>
         </div>
       </section>
@@ -63,30 +86,27 @@ const Home = () => {
         <div className="section-content">
           <h2 className="section-title">My Projects</h2>
           <div className="projects-grid">
-            <div className="project-card">
-              <h3 className="project-title">E-Commerce Platform</h3>
-              <p className="project-description">
-                A full-stack e-commerce application with payment integration
-              </p>
-              <p className="project-tech">React, Node.js, MongoDB</p>
-              <button className="project-button">View Project</button>
-            </div>
-            <div className="project-card">
-              <h3 className="project-title">Task Management App</h3>
-              <p className="project-description">
-                Collaborative task manager with real-time updates
-              </p>
-              <p className="project-tech">React, Firebase, CSS</p>
-              <button className="project-button">View Project</button>
-            </div>
-            <div className="project-card">
-              <h3 className="project-title">Weather Dashboard</h3>
-              <p className="project-description">
-                Weather forecast app with location-based data
-              </p>
-              <p className="project-tech">React, API Integration, CSS</p>
-              <button className="project-button">View Project</button>
-            </div>
+            {projects.map((project, index) => (
+              <div key={index} className="project-card">
+                <h3 className="project-title">{project.title}</h3>
+                <p className="project-description">{project.description}</p>
+                <p className="project-tech">{project.tech}</p>
+                <div className="project-buttons">
+                  <button 
+                    className="project-button primary"
+                    onClick={() => window.open(project.liveLink, '_blank')}
+                  >
+                    Live Demo
+                  </button>
+                  <button 
+                    className="project-button secondary"
+                    onClick={() => window.open(project.githubLink, '_blank')}
+                  >
+                    GitHub
+                  </button>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -102,10 +122,10 @@ const Home = () => {
               <strong>Email:</strong> naldokrisha22@gmail.com
             </div>
             <div className="contact-item">
-              <strong>LinkedIn:</strong> linkedin.com/in/yourprofile
+              <strong>LinkedIn:</strong> www.linkedin.com/in/krisha-naldo-80820133a
             </div>
             <div className="contact-item">
-              <strong>GitHub:</strong> github.com/yourusername
+              <strong>GitHub:</strong> github.com/KrishaNaldo
             </div>
           </div>
         </div>
