@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/KrishaNaldo/my-portfolio.git/static/css/main.af66f541.css",
+    "main.js": "/KrishaNaldo/my-portfolio.git/static/js/main.309f4d36.js",
+    "static/js/453.ececc0a5.chunk.js": "/KrishaNaldo/my-portfolio.git/static/js/453.ececc0a5.chunk.js",
+    "index.html": "/KrishaNaldo/my-portfolio.git/index.html",
+    "main.af66f541.css.map": "/KrishaNaldo/my-portfolio.git/static/css/main.af66f541.css.map",
+    "main.309f4d36.js.map": "/KrishaNaldo/my-portfolio.git/static/js/main.309f4d36.js.map",
+    "453.ececc0a5.chunk.js.map": "/KrishaNaldo/my-portfolio.git/static/js/453.ececc0a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af66f541.css",
+    "static/js/main.309f4d36.js"
+  ]
+}
