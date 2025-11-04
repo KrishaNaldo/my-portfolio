@@ -63,7 +63,7 @@ const About = () => {
 
 const handleDownloadResume = () => {
   const link = document.createElement('a');
-  link.href = process.env.PUBLIC_URL + '/Resume_Krisha_Naldo.pdf';
+  link.href = process.env.PUBLIC_URL + '/RESUME_NALDO_KRISHA (1).pdf';
   link.download = 'Krisha_Naldo_Resume.pdf';
   link.click();
 };
@@ -201,7 +201,7 @@ const handleDownloadResume = () => {
       </div>
 
       <footer className="footer">
-        <p>© 2024 Krisha Naldo. All rights reserved.</p>
+        <p>© 2025 Krisha Naldo. All rights reserved.</p>
       </footer>
     </div>
   );

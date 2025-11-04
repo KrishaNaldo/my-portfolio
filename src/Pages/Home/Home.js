@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
+
 const Home = () => {
   const scrollToProjects = () => {
     const projectsSection = document.getElementById('projects');
@@ -38,7 +39,7 @@ const Home = () => {
     <div className="home-container">
       <nav className="navbar">
         <div className="nav-content">
-          <h2 className="logo">My Portfolio</h2>
+          <h2 className="logo">KN</h2>
           <div className="nav-links">
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/gallery" className="nav-link">Gallery</Link>
@@ -117,22 +118,37 @@ const Home = () => {
           <p className="contact-text">
             I'm always open to new opportunities and collaborations
           </p>
-          <div className="contact-info">
-            <div className="contact-item">
-              <strong>Email:</strong> naldokrisha22@gmail.com
-            </div>
-            <div className="contact-item">
-              <strong>LinkedIn:</strong> www.linkedin.com/in/krisha-naldo-80820133a
-            </div>
-            <div className="contact-item">
-              <strong>GitHub:</strong> github.com/KrishaNaldo
-            </div>
-          </div>
+        <div className="contact-info">
+        <div className="contact-item">
+         <strong>Email:</strong>{' '}
+       <a href="mailto:naldokrisha22@gmail.com">naldokrisha22@gmail.com</a>
         </div>
+        <div className="contact-item">
+       <strong>LinkedIn:</strong>{' '}
+           <a 
+           href="https://www.linkedin.com/in/krisha-naldo-80820133a" 
+           target="_blank" 
+          rel="noopener noreferrer"
+              >
+          www.linkedin.com/in/krisha-naldo-80820133a
+       </a>
+      </div>
+           <div className="contact-item">
+       <strong>GitHub:</strong>{' '}
+    <a 
+      href="https://github.com/KrishaNaldo" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      github.com/KrishaNaldo
+    </a>
+  </div>
+</div>
+      </div>
       </section>
 
       <footer className="footer">
-        <p>© 2024 Krisha Naldo. All rights reserved.</p>
+        <p>© 2025 Krisha Naldo. All rights reserved.</p>
       </footer>
     </div>
   );

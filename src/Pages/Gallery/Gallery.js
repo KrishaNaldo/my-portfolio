@@ -44,7 +44,7 @@ const Gallery = () => {
       </div>
 
       <footer className="footer">
-        <p>© 2024 Your Name. All rights reserved.</p>
+        <p>© 2025 Krisha Naldo. All rights reserved.</p>
       </footer>
     </div>
   );
