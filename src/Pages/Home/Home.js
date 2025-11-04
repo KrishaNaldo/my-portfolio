@@ -16,7 +16,7 @@ const Home = () => {
       title: 'Cat-Website',
       description: 'Purrfect Cats is an interactive, modern web application dedicated to cat lovers and pet owners.',
       tech: 'React and CSS',
-      liveLink: 'https://your-ecommerce-project.com', 
+      liveLink: 'https://drive.google.com/file/d/1ae2lpkipYRirnt73UEPNnV9qsDUGs0Sr/view?usp=sharing', 
       githubLink: 'https://github.com/KrishaNaldo/krisu.git' 
     },
     {
@@ -28,9 +28,9 @@ const Home = () => {
     },
     {
       title: 'Mental Health Website',
-      description: 'A calming web application designed to support individuals experiencing anxiety, depression, and insomnia.',
+      description: 'An on-going project and it is designed to support individuals experiencing anxiety, depression, and insomnia.',
       tech: 'React,CSS',
-      liveLink: 'https://your-weather-app.com', 
+      liveLink: 'https://drive.google.com/file/d/1IhBgvL52M0-7OF1xs5NhfiiwnyUzmXBI/view?usp=sharing', 
       githubLink: 'https://github.com/KrishaNaldo/cat-website.git' 
     }
   ];
